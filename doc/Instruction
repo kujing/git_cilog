@@ -1,0 +1,24 @@
+1、服务器
+2、项目
+3、分支
+    提交
+    文件
+4、标签
+5、Push
+
+
+
+Tag的信息根据不同的新建方式也不同，如下：带^{}的为用户常见并push的，第一条则是在gitlab中新建的，标签sn20141119的真正commit hash是第三条，所以需要过滤到中间的记录
+$ git show-ref --tags --dereference
+73e6924faa7e79d01abf2fa3369aa917ff58fa6e refs/tags/releace-v63
+e9fb637837d9944859aaf7619909d33ba52e497e refs/tags/sn20141119
+d7fe8e7a5cb1462fc8b9d08bef235eda034f89ad refs/tags/sn20141119^{}
+
+时间都是无时区的
+注意：Oracle的SQL语句不能使用分号结尾
+
+Installation
+    Git
+    Python 3.0
+    psycopg2
+    cx_Oracle
