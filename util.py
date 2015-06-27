@@ -9,6 +9,7 @@ import sys
 import time
 import re
 
+
 ON_LINUX = (platform.system() == 'Linux')
 conf = {
     'max_domains': 10,
